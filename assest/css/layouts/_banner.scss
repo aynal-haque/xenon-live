@@ -1,0 +1,23 @@
+.banar{
+    height: 100vh;
+    .bannar-contant{
+        h1{
+            color: $white;
+            font-weight: 900;
+            text-transform: capitalize;
+            font-size: 65px;
+            line-height: 100px;
+        }
+        h4{
+            color: $white;
+            font-size: 20px;
+            text-transform: capitalize;
+            margin: 20px 0;
+        }
+        a.box-btn{
+            margin-right: 10px;
+        }
+        
+    }
+    
+}

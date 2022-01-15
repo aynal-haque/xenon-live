@@ -1,0 +1,65 @@
+.protfolio-area {
+    .col-xxl-4{
+        padding: 0px;
+        .protfolio-item{
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            &:hover{
+                .protfolio-contant{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
+                }
+            }
+            .protfolio-contant{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                line-height: 30px;
+                text-align: center;
+                color: $white;
+                position: relative;
+                z-index: 2;
+                transform: scale(0);
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    content: "";
+                    background: #333;
+                    z-index: -1;
+                    opacity: .75;
+
+                }
+                a{
+                color: $white;
+                border: 2px solid #fff;
+                padding: 6px;
+                border-radius: 50%;
+                i{
+                    font-size: 20px;
+                    
+                 }
+                }
+                
+                h4{
+                    font-size: 25px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    span{
+                        display: block;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.footer-area {
+    background: #333;
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+    h4 {
+        font-size: 50px;
+        display: block;
+        padding: 20px;
+        text-transform: capitalize;
+    }
+    a {
+        color: #fff;
+        padding: 21px 10px;
+        display: inline-block;
+    }
+    p.copy {
+        border-top: 1px solid #777;
+        padding-top: 20px;
+        text-transform: capitalize;
+    }
+}
+

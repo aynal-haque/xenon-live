@@ -1,0 +1,43 @@
+.about-area{
+    .about-img{
+        img{
+            vertical-align: middle;
+        }
+    }
+    .aobut-contant{
+        h2{
+            font-size: 50px;
+            font-weight: 800;
+            color: $header-color;
+            text-transform: capitalize;
+            line-height: 60px;
+        }
+        h4{
+            font-size: 30px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        p{
+            font-size: 17px;
+        }
+        ul{
+            li{
+                text-transform: capitalize;
+                i{
+                    padding-right: 10px;
+                    color: $link-color;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+

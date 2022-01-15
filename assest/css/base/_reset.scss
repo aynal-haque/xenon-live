@@ -1,0 +1,131 @@
+@import './vriables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+/*Padding & Margin CSS*/
+@for $i from 1 through 10{
+    .pt-#{$i * 10} {
+      padding-top:$i  * 10px;  
+    }
+    .pb-#{$i * 10} {
+        padding-bottom:$i  * 10px;  
+    }
+    .mt-#{$i * 10} {
+        margin-top:$i  * 10px;  
+    }
+    .mt-#{$i * 10} {
+        margin-bottom:$i  * 10px;  
+    }
+}
+
+/*Button CSS*/
+.btn{
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: $white;
+    transition: .4s;
+    font-weight: 600;
+    background-color: $box-btn-bg-color;
+    border: 2px solid $box-btn-bg-color;
+    &.box-btn{
+        padding: 10px 30px;
+         &:hover{
+            background: $box-btn-hover;
+            border-color: $box-btn-hover;
+            color: $white;
+        }
+    }
+    &.border-btn{
+        padding: 10px 30px;
+        background: transparent;
+        border: 2px solid $box-btn-bg-color;
+        &:hover{
+           background-color: $box-btn-bg-color;
+        }
+    }
+
+
+}
+
+a, a:hover, a:focus, input, textarea {
+    text-decoration: none;
+    outline: none;
+}
+
+/*Background Image CSS*/
+.bg{
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    position: relative;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $bg-color;
+        z-index: -1;
+        content: "";
+        opacity: .75;
+    }
+}
+
+
+/*Align CSS*/
+
+$text: left, center, right, justify;
+
+@each $i in $text {
+    .align-#{$i} {
+      text-align: $i;  
+    }
+}
+
+/*Flex CSS*/
+
+$flex: flex, inline-flex;
+
+@each $i in $flex {
+    .d-#{$i} {
+      display: $i;  
+    }
+}
+
+$justify: start, center, end, evenly, space-around, space-between;
+
+@each $i in $justify {
+    .justify-content-#{$i} {
+      justify-content: $i;  
+    }
+}
+
+
+$align-items: start, center, end, stretch, baseline;
+
+@each $i in $align-items {
+    .align-items-#{$i} {
+        align-items: $i;  
+    }
+}
+
+
+
+
